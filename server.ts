@@ -3,12 +3,12 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import { json } from 'body-parser';
 
-import ordersRoutes from './routes/ordersRoute';
+import ordersRoutes from './routes/orders-route';
 
 dotenv.config();
 
 const app: Express = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 
